@@ -28,27 +28,10 @@ cd html-and-pdf-generators
 
 Sphinx example source is in directory `sphinx/`.
 
-To setup sphinx under Debian 10 do this:
+Sphinx setup instructions are (written in Sphinx) here:
 
-* for HTML output support you need to install:
-  
-  ```shell
-  sudo apt-get install make python3-sphinx
-  ```
-* then build documentation using:
+* https://hpaluch.github.io/html-and-pdf-generators/sphinx/setup.html
 
-  ```shell
-  make html
-  ```
-* to preview HTML output you can use:
-
-  ```shell
-  python3 -m http.server --directory build/html/ 8080
-  ```
-
-Sphinx HTML output is available on:
-
-* https://hpaluch.github.io/html-and-pdf-generators/sphinx/
 
 
 

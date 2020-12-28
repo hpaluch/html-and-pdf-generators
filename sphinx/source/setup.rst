@@ -3,6 +3,16 @@ Setting up Sphinx example
 
 Tested under Debian 10
 
+At first install git and checkout this example project:
+
+.. code-block:: shell
+
+   sudo apt-get install git
+   mkdir -p ~/projects
+   cd  ~/projects
+   git clone https://github.com/hpaluch/html-and-pdf-generators.git
+   cd html-and-pdf-generators
+
 HTML Output
 -----------
 
