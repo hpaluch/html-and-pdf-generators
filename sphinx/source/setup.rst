@@ -38,3 +38,20 @@ To preview generated HTML documentation use command like:
 HTML Publishing: just copy all files from `build/html/` to your
 Web hosting site.
 
+PDF Output
+----------
+
+Ensure that these packages are installed:
+
+.. code-block:: shell
+
+   sudo apt-get install make python3-sphinx \
+      latexmk texlive-latex-recommended texlive-fonts-recommended \
+      texlive-latex-extra
+
+Run this command to produce PDF output ``build/latex/SphinxPoC.pdf``:
+
+.. code-block:: shell
+
+   make latexpdf
+

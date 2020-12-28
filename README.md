@@ -3,9 +3,8 @@
 Here will be sample projects and their HTML and PDF output
 from popular documentation generators.
 
-Please see:
-- https://hpaluch.github.io/2020/12/28/html-and-pdf-generators.html
-for more information.
+Why? I'm looking for best tool to write documentation with
+HTML **and** PDF output.
 
 ## Example projects
 
@@ -26,7 +25,11 @@ cd html-and-pdf-generators
 
 ### Sphinx
 
-Sphinx example source is in directory `sphinx/`.
+Sphinx example source is in directory [sphinx/](https://github.com/hpaluch/html-and-pdf-generators/tree/master/sphinx).
+
+Outputs:
+- [Example HTML Output](https://hpaluch.github.io/html-and-pdf-generators/sphinx/)
+- [Example PDF Output](https://hpaluch.github.io/html-and-pdf-generators/SphinxPoC.pdf)
 
 Sphinx setup instructions are (written in Sphinx) here:
 
