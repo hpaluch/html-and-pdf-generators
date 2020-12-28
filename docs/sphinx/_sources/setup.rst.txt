@@ -26,7 +26,7 @@ Then run this command to generate HTML version of documentation:
 
 .. code-block:: shell
 
-   # invoke this under source/ directory
+   # invoke this under ~/projects/html-and-pdf-generators/sphinx/ directory
    make html
 
 To preview generated HTML documentation use command like:
