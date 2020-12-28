@@ -59,6 +59,19 @@ make html
 <p>HTML Publishing: just copy all files from <cite>build/html/</cite> to your
 Web hosting site.</p>
 </div>
+<div class="section" id="pdf-output">
+<h2>PDF Output<a class="headerlink" href="#pdf-output" title="Permalink to this headline">¶</a></h2>
+<p>Ensure that these packages are installed:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo apt-get install make python3-sphinx <span class="se">\</span>
+   latexmk texlive-latex-recommended texlive-fonts-recommended <span class="se">\</span>
+   texlive-latex-extra
+</pre></div>
+</div>
+<p>Run this command to produce PDF output <code class="docutils literal notranslate"><span class="pre">build/latex/SphinxPoC.pdf</span></code>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make latexpdf
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -81,6 +94,7 @@ Web hosting site.</p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up Sphinx example</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#html-output">HTML Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pdf-output">PDF Output</a></li>
 </ul>
 </li>
 </ul>
