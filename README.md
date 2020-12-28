@@ -32,6 +32,7 @@ Sphinx setup instructions are (written in Sphinx) here:
 
 * https://hpaluch.github.io/html-and-pdf-generators/sphinx/setup.html
 
+Tip: you can click on link [Page Source](https://hpaluch.github.io/html-and-pdf-generators/sphinx/_sources/setup.rst.txt) to get RST page source.
 
 
 
