@@ -33,8 +33,24 @@
   <div class="section" id="setting-up-sphinx-example">
 <h1>Setting up Sphinx example<a class="headerlink" href="#setting-up-sphinx-example" title="Permalink to this headline">¶</a></h1>
 <p>Tested under Debian 10</p>
+<div class="section" id="html-output">
+<h2>HTML Output<a class="headerlink" href="#html-output" title="Permalink to this headline">¶</a></h2>
 <p>Install at least these packages to use Sphinx with HTML output:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo apt-get install make python3-sphinx
+</pre></div>
+</div>
 <p>Then run this command to generate HTML version of documentation:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># invoke this under source/ directory</span>
+make html
+</pre></div>
+</div>
+<p>To preview generated HTML documentation use command like:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m http.server --directory build/html/ <span class="m">8080</span>
+</pre></div>
+</div>
+<p>HTML Publishing: just copy all files from <cite>build/html/</cite> to your
+Web hosting site.</p>
+</div>
 </div>
 
 
@@ -55,7 +71,10 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up Sphinx example</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up Sphinx example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#html-output">HTML Output</a></li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
