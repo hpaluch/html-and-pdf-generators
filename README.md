@@ -6,6 +6,16 @@ from popular documentation generators.
 Why? I'm looking for best tool to write documentation with
 HTML **and** PDF output.
 
+As described on [My Blog](https://hpaluch.github.io/2020/12/28/html-and-pdf-generators.html) - I'm aware of following HTML and PDF generators:
+
+* `Sphinx`
+* `GNU Texinfo`
+* `GNU Troff (Groff)`
+* `DocBook` based tools:
+
+  - `GTK-Doc`
+  - `Fedora Publican`
+
 ## Example projects
 
 At first install git - under Debian 10:
