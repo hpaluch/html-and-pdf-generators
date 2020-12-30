@@ -6,19 +6,19 @@ Copyright (C) 2020 Henryk Paluch -->
 <!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Setup (Using GNU Texinfo for HTML and PDF documentation)</title>
+<title>Browse Info output (Using GNU Texinfo for HTML and PDF documentation)</title>
 
-<meta name="description" content="Setup (Using GNU Texinfo for HTML and PDF documentation)">
-<meta name="keywords" content="Setup (Using GNU Texinfo for HTML and PDF documentation)">
+<meta name="description" content="Browse Info output (Using GNU Texinfo for HTML and PDF documentation)">
+<meta name="keywords" content="Browse Info output (Using GNU Texinfo for HTML and PDF documentation)">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="texi2any">
 <link href="index.html#Top" rel="start" title="Top">
 <link href="Index.html#Index" rel="index" title="Index">
 <link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
-<link href="index.html#Top" rel="up" title="Top">
-<link href="System-preparation.html#System-preparation" rel="next" title="System preparation">
-<link href="Introduction.html#Introduction" rel="prev" title="Introduction">
+<link href="Setup.html#Setup" rel="up" title="Setup">
+<link href="Index.html#Index" rel="next" title="Index">
+<link href="Generating-documentation.html#Generating-documentation" rel="prev" title="Generating documentation">
 <style type="text/css">
 <!--
 a.summary-letter {text-decoration: none}
@@ -51,24 +51,32 @@ ul.no-bullet {list-style: none}
 </head>
 
 <body lang="en">
-<a name="Setup"></a>
+<a name="Browse-Info-output"></a>
 <div class="header">
 <p>
-Next: <a href="Index.html#Index" accesskey="n" rel="next">Index</a>, Previous: <a href="Introduction.html#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+Previous: <a href="Generating-documentation.html#Generating-documentation" accesskey="p" rel="prev">Generating documentation</a>, Up: <a href="Setup.html#Setup" accesskey="u" rel="up">Setup</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
 </div>
 <hr>
-<a name="Setup-1"></a>
-<h2 class="chapter">2 Setup</h2>
+<a name="Browse-Info-output-1"></a>
+<h3 class="section">2.3 Browse Info output</h3>
+<a name="index-Pinfo-usage"></a>
+<p>To view <samp>TexinfoPoC.info</samp> file use this command:
+</p>
+<pre class="verbatim">pinfo -f TexinfoPoC.info
+</pre>
+<div class="float"><a name="fig_003apinfo"></a>
+<img src="pinfo-viewer.png" alt="pinfo-viewer">
 
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="System-preparation.html#System-preparation" accesskey="1">System preparation</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="Generating-documentation.html#Generating-documentation" accesskey="2">Generating documentation</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="Browse-Info-output.html#Browse-Info-output" accesskey="3">Browse Info output</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
-
+<div class="float-caption"><p><strong>Figure 2.1: </strong>Pinfo viewer</p></div></div>
+<p>Please see <a href="#fig_003apinfo">Figure 2.1</a> how &lsquo;<samp>Pinfo viewer</samp>&rsquo; looks alike.
+</p>
+<p>Use arrows keys to select &quot;Link&quot; (active Link is in Red color).
+Press <tt class="key">ENTER</tt> to Drill Down selected Link.
+Finally press <kbd>q</kbd> to quit &lsquo;<samp>pinfo(1)</samp>&rsquo;.
+</p>
+<p>Note: Emacs fans may prefer to use original <code>info</code> to view
+Info documentation.
+</p>
 
 
 

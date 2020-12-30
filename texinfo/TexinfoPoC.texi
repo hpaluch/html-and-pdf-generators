@@ -75,6 +75,13 @@ Embedded Image support
 @node Setup
 @chapter Setup
 
+@menu
+* System preparation::
+* Generating documentation::
+* Browse Info output::
+@end menu
+
+@node    System preparation
 @section System preparation
 
 Tested on @code{Debian 10 (Buster)}.
@@ -105,6 +112,7 @@ cd html-and-pdf-generators
 
 And follow next section
 
+@node    Generating documentation
 @section Generating documentation
 
 Use these commands to generate multiple output formats (PDF, HTML and Info):
@@ -129,8 +137,10 @@ using @samp{pinfo(1)} or @samp{info(1)} commands.
 
 @end table
 
+@node    Browse Info output
+@section Browse Info output
 @pindex Pinfo usage
-Tip: to view @file{TexinfoPoC.info} file use this command:
+To view @file{TexinfoPoC.info} file use this command:
 
 @verbatim
 pinfo -f TexinfoPoC.info
@@ -146,6 +156,9 @@ Please see @ref{fig:pinfo} how @samp{Pinfo viewer} looks alike.
 Use arrows keys to select "Link" (active Link is in Red color).
 Press @key{ENTER} to Drill Down selected Link.
 Finally press @kbd{q} to quit @samp{pinfo(1)}.
+
+Note: Emacs fans may prefer to use original @command{info} to view
+Info documentation.
 
 @node Index
 @chapter Index

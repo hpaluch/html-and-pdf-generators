@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- How to use GNU Texinfo to produce HTML and PDF documents
+
+Copyright (C) 2020 Henryk Paluch -->
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>System preparation (Using GNU Texinfo for HTML and PDF documentation)</title>
+
+<meta name="description" content="System preparation (Using GNU Texinfo for HTML and PDF documentation)">
+<meta name="keywords" content="System preparation (Using GNU Texinfo for HTML and PDF documentation)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2any">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Setup.html#Setup" rel="up" title="Setup">
+<link href="Generating-documentation.html#Generating-documentation" rel="next" title="Generating documentation">
+<link href="Setup.html#Setup" rel="prev" title="Setup">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="System-preparation"></a>
+<div class="header">
+<p>
+Next: <a href="Generating-documentation.html#Generating-documentation" accesskey="n" rel="next">Generating documentation</a>, Up: <a href="Setup.html#Setup" accesskey="u" rel="up">Setup</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="System-preparation-1"></a>
+<h3 class="section">2.1 System preparation</h3>
+
+<p>Tested on <code>Debian 10 (Buster)</code>.
+</p>
+<p>Install these packages to use Texinfo in our example:
+</p>
+<pre class="verbatim">sudo apt-get install git make texinfo info pinfo texlive-binaries \
+   texlive-latex-base texlive-plain-generic
+</pre>
+<p>Note: The <code>info(1)</code> and <code>pinfo(1)</code> are viewers of 
+<code>Info</code> output formats (hyper-text format used even before
+World Wide Web. Similarly we use <code>make(1)</code> as build system
+and <code>git(1)</code> to checkout our sample project.
+</p>
+<p>Note: We must install <code>texlive-latex-base</code>, because Texinfo
+uses LaTeX fonts.
+</p>
+<p>Now checkout this project from GitHub using:
+</p>
+<pre class="verbatim">mkdir -p ~/projects
+cd  ~/projects
+git clone https://github.com/hpaluch/html-and-pdf-generators.git
+cd html-and-pdf-generators
+</pre>
+<p>And follow next section
+</p>
+
+
+
+</body>
+</html>
