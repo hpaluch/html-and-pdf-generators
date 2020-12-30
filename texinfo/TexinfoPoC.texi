@@ -28,6 +28,8 @@ technical manual with HTML and PDF output.
 @menu
 * Introduction::
 * Setup::
+
+* Index::
 @end menu
 
 @node Introduction
@@ -127,6 +129,7 @@ using @samp{pinfo(1)} or @samp{info(1)} commands.
 
 @end table
 
+@pindex Pinfo usage
 Tip: to view @file{TexinfoPoC.info} file use this command:
 
 @verbatim
@@ -143,5 +146,12 @@ Please see @ref{fig:pinfo} how @samp{Pinfo viewer} looks alike.
 Use arrows keys to select "Link" (active Link is in Red color).
 Press @key{ENTER} to Drill Down selected Link.
 Finally press @kbd{q} to quit @samp{pinfo(1)}.
+
+@node Index
+@chapter Index
+
+@section Program Index
+
+@printindex pg
 
 @bye

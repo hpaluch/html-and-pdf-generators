@@ -6,6 +6,7 @@ all:  $(MANUAL).pdf $(MANUAL).info $(MANUAL)/index.html
 
 %.pdf : %.texi
 	pdftex $<
+	texindex $(MANUAL).??
 	# two pass needed for TOC generation
 	pdftex $<
 
@@ -17,7 +18,7 @@ $(MANUAL)/index.html : $(MANUAL).texi
 	cp -v *.png $(@D)
 
 clean:
-	rm -f -- *.log *.pdf *.aux *.toc *.info
+	rm -f -- *.log *.pdf *.aux *.toc *.pg *.pgs *.info
 	rm -rf -- $(MANUAL)
 
 # publish generated files to ../docs/
