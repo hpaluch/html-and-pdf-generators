@@ -2,8 +2,7 @@
 <html>
 <!-- How to use GNU Texinfo to produce HTML and PDF documents
 
-Copyright (C) 2020 Henryk Paluch
-This manual can be used and distributed under MIT license -->
+Copyright (C) 2020 Henryk Paluch -->
 <!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -67,7 +66,7 @@ Previous: <a href="Introduction.html#Introduction" accesskey="p" rel="prev">Intr
 <p>Install these packages to use Texinfo in our example:
 </p>
 <pre class="verbatim">sudo apt-get install git make texinfo info pinfo texlive-binaries \
-   texlive-latex-base
+   texlive-latex-base texlive-plain-generic
 </pre>
 <p>Note: The <code>info(1)</code> and <code>pinfo(1)</code> are viewers of 
 <code>Info</code> output formats (hyper-text format used even before
@@ -89,12 +88,12 @@ cd html-and-pdf-generators
 <a name="Generating-documentation"></a>
 <h3 class="section">2.2 Generating documentation</h3>
 
-<p>Use these commands to generate all available formats (PDF, HTML and Info):
+<p>Use these commands to generate multiple output formats (PDF, HTML and Info):
 </p>
 <pre class="verbatim">cd ~/projects/html-and-pdf-generators/texinfo/
 make
 </pre>
-<p>There are following formats generates:
+<p>There are following formats generated:
 </p>
 <dl compact="compact">
 <dt>&lsquo;<samp>TexinfoPoC.pdf</samp>&rsquo;</dt>
@@ -112,6 +111,20 @@ using &lsquo;<samp>pinfo(1)</samp>&rsquo; or &lsquo;<samp>info(1)</samp>&rsquo; 
 </dd>
 </dl>
 
+<p>Tip: to view <samp>TexinfoPoC.info</samp> file use this command:
+</p>
+<pre class="verbatim">pinfo -f TexinfoPoC.info
+</pre>
+<div class="float"><a name="fig_003apinfo"></a>
+<img src="pinfo-viewer.png" alt="pinfo-viewer">
+
+<div class="float-caption"><p><strong>Figure 2.1: </strong>Pinfo viewer</p></div></div>
+<p>Please see <a href="#fig_003apinfo">Figure 2.1</a> how &lsquo;<samp>Pinfo viewer</samp>&rsquo; looks alike.
+</p>
+<p>Use arrows keys to select &quot;Link&quot; (active Link is in Red color).
+Press <tt class="key">ENTER</tt> to Drill Down selected Link.
+Finally press <kbd>q</kbd> to quit &lsquo;<samp>pinfo(1)</samp>&rsquo;.
+</p>
 
 
 

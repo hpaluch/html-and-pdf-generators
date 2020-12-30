@@ -2,8 +2,7 @@
 <html>
 <!-- How to use GNU Texinfo to produce HTML and PDF documents
 
-Copyright (C) 2020 Henryk Paluch
-This manual can be used and distributed under MIT license -->
+Copyright (C) 2020 Henryk Paluch -->
 <!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -60,8 +59,42 @@ Next: <a href="Setup.html#Setup" accesskey="n" rel="next">Setup</a>, Previous: <
 <a name="Introduction-2"></a>
 <h2 class="chapter">1 Introduction</h2>
 
-<p>......
+<p>The <a href="https://www.gnu.org/software/texinfo/manual/texinfo/">GNU Texinfo</a>
+is prefered system to write technical documentation for GNU Programs. This
+system was created in late &rsquo;80 (Manual Copyright starts in 1988).
 </p>
+<p>Originally it could generate only two output formats:
+</p>
+<dl compact="compact">
+<dt>&lsquo;<samp>DVI</samp>&rsquo;</dt>
+<dd><p>Device Independent format produced with TeX (PDF was yet to
+be invented by Adobe :-)
+</p>
+</dd>
+<dt>&lsquo;<samp>Info</samp>&rsquo;</dt>
+<dd><p>Hypertext format (again before World Wide Web was created) for
+&lsquo;<samp>info(1)</samp>&rsquo; viewer - however personally I prefer to use
+more intuitive &lsquo;<samp>pinfo(1)</samp>&rsquo; viewer.
+</p></dd>
+</dl>
+
+<p>Fortunately many things improved over years:
+</p>
+<ul>
+<li> Direct PDF output was possible thanks to new PdfTeX. Before
+PdfTex one has to produce DVI, then transform it to PostScript
+using &lsquo;<samp>dvi2ps(1)</samp>&rsquo; command and finally convert it to PDF
+using Ghostscript&rsquo;s helper script &lsquo;<samp>ps2pdf(1)</samp>&rsquo;.
+
+</li><li> HTML Output
+
+</li><li> Embedded Image support 
+
+</li></ul>
+
+
+
+
 
 
 

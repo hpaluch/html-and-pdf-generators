@@ -55,7 +55,7 @@ Fortunately many things improved over years:
 @itemize
 @item 
 Direct PDF output was possible thanks to new PdfTeX. Before
-PpdTex one has to produce DVI, then transform it to PostScript
+PdfTex one has to produce DVI, then transform it to PostScript
 using @samp{dvi2ps(1)} command and finally convert it to PDF
 using Ghostscript's helper script @samp{ps2pdf(1)}.
 
