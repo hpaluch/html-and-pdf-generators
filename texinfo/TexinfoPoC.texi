@@ -1,0 +1,98 @@
+\input texinfo.tex
+@settitle Using GNU Texinfo for HTML and PDF documentation
+
+@copying
+How to use GNU Texinfo to produce HTML and PDF documents
+
+Copyright @copyright{} 2020 Henryk Paluch
+@quotation
+This manual can be used and distributed under MIT license
+@end quotation
+@end copying
+
+@titlepage
+@title Using GNU Texinfo for HTML and PDF documentation
+@author Henryk Paluch
+
+@vskip 0pt plus 1fill
+@insertcopying
+@end titlepage
+
+@contents
+
+@ifnottex
+@node Top
+@top Introduction
+
+Here we will introduce (Proof of Concept) how to use GNU Texinfo to write
+technical manual with HTML and PDF output.
+@end ifnottex
+
+@menu
+* Introduction::
+* Setup::
+@end menu
+
+@node Introduction
+@chapter Introduction
+
+......
+
+@node Setup
+@chapter Setup
+
+@section System preparation
+
+Tested on @code{Debian 10 (Buster)}.
+
+Install these packages to use Texinfo in our example:
+
+@verbatim
+sudo apt-get install git make texinfo info pinfo texlive-binaries \
+   texlive-latex-base
+@end verbatim
+
+Note: The @code{info(1)} and @code{pinfo(1)} are viewers of 
+@code{Info} output formats (hyper-text format used even before
+World Wide Web. Similarly we use @code{make(1)} as build system
+and @code{git(1)} to checkout our sample project.
+
+Note: We must install @code{texlive-latex-base}, because Texinfo
+uses LaTeX fonts.
+
+Now checkout this project from GitHub using:
+
+@verbatim
+mkdir -p ~/projects
+cd  ~/projects
+git clone https://github.com/hpaluch/html-and-pdf-generators.git
+cd html-and-pdf-generators
+@end verbatim
+
+And follow next section
+
+@section Generating documentation
+
+Use these commands to generate all available formats (PDF, HTML and Info):
+
+@verbatim
+cd ~/projects/html-and-pdf-generators/texinfo/
+make
+@end verbatim
+
+There are following formats generates:
+
+@table @samp
+@item TexinfoPoC.pdf
+PDF output created with PdfTeX
+
+@item TexinfoPoC/index.html
+HTML output (set of files)
+
+@item TexinfoPoC.info
+Info hypertext format, could be viewerd
+using @samp{pinfo(1)} or @samp{info(1)} commands.
+
+@end table
+
+@bye

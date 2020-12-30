@@ -6,3 +6,11 @@
 # sphinx output
 build/
 
+# texinfo pdftex files
+*.log
+*.aux
+*.toc
+# files generated under texinfo
+/texinfo/TexinfoPoC.pdf
+/texinfo/TexinfoPoC.info
+/texinfo/TexinfoPoC/

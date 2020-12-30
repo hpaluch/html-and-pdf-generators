@@ -47,6 +47,18 @@ Sphinx setup instructions are (written in Sphinx) here:
 
 Tip: you can click on link [Page Source](https://hpaluch.github.io/html-and-pdf-generators/sphinx/_sources/setup.rst.txt) to get RST page source.
 
+## GNU Texinfo
+
+GNU Texinfo example source is in directory [texinfo/](https://github.com/hpaluch/html-and-pdf-generators/tree/master/texinfo).
+
+Outputs:
+- [Example HTML Output](https://hpaluch.github.io/html-and-pdf-generators/texinfo/TexinfoPoC/)
+- [Example PDF Output](https://hpaluch.github.io/html-and-pdf-generators/SphinxPoC.pdf)
+
+GNU Texinfo setup instructions are (written in Texinfo) here
+
+* https://hpaluch.github.io/html-and-pdf-generators/texinfo/setup.html
+
 
 
 
