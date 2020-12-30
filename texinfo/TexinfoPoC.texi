@@ -134,7 +134,7 @@ pinfo -f TexinfoPoC.info
 @end verbatim
 
 @float Figure,fig:pinfo
-@image{pinfo-viewer}
+@image{pinfo-viewer,16cm}
 @caption{Pinfo viewer}
 @end float
 
