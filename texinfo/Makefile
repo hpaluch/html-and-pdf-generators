@@ -14,6 +14,8 @@ all:  $(MANUAL).pdf $(MANUAL).info $(MANUAL)/index.html
 
 $(MANUAL)/index.html : $(MANUAL).texi
 	texi2any --html $<
+	cp -v *.png $(@D)
+
 clean:
 	rm -f -- *.log *.pdf *.aux *.toc *.info
 	rm -rf -- $(MANUAL)
@@ -24,8 +26,8 @@ clean:
 
 ../docs/$(MANUAL)/index.html : $(MANUAL)/index.html 
 	mkdir -p $(@D)
-	rm -f $(@D)/*.html
-	cp -v $(<D)/*.html $(@D)
+	rm -f $(@D)/*.html $(@D)/*.png
+	cp -v $(<D)/*.html $(<D)/*.png $(@D)
 
 publish: ../docs/$(MANUAL).pdf ../docs/$(MANUAL)/index.html 
 

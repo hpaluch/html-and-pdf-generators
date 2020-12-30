@@ -49,11 +49,11 @@ Tip: you can click on link [Page Source](https://hpaluch.github.io/html-and-pdf-
 
 ## GNU Texinfo
 
-GNU Texinfo example source is in directory [texinfo/](https://github.com/hpaluch/html-and-pdf-generators/tree/master/texinfo).
+[GNU Texinfo](https://www.gnu.org/software/texinfo/manual/texinfo/) example source is in directory [texinfo/](https://github.com/hpaluch/html-and-pdf-generators/tree/master/texinfo).
 
 Outputs:
 - [Example HTML Output](https://hpaluch.github.io/html-and-pdf-generators/texinfo/TexinfoPoC/)
-- [Example PDF Output](https://hpaluch.github.io/html-and-pdf-generators/SphinxPoC.pdf)
+- [Example PDF Output](https://hpaluch.github.io/html-and-pdf-generators/TexinfoPoC.pdf)
 
 GNU Texinfo setup instructions are (written in Texinfo) here
 

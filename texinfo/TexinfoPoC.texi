@@ -5,9 +5,6 @@
 How to use GNU Texinfo to produce HTML and PDF documents
 
 Copyright @copyright{} 2020 Henryk Paluch
-@quotation
-This manual can be used and distributed under MIT license
-@end quotation
 @end copying
 
 @titlepage
@@ -36,7 +33,42 @@ technical manual with HTML and PDF output.
 @node Introduction
 @chapter Introduction
 
-......
+The @url{https://www.gnu.org/software/texinfo/manual/texinfo/, GNU Texinfo}
+is prefered system to write technical documentation for GNU Programs. This
+system was created in late '80 (Manual Copyright starts in 1988).
+
+Originally it could generate only two output formats:
+
+@table @samp
+@item DVI
+Device Independent format produced with TeX (PDF was yet to
+be invented by Adobe :-)
+
+@item Info
+Hypertext format (again before World Wide Web was created) for
+@samp{info(1)} viewer - however personally I prefer to use
+more intuitive @samp{pinfo(1)} viewer.
+@end table
+
+Fortunately many things improved over years:
+
+@itemize
+@item 
+Direct PDF output was possible thanks to new PdfTeX. Before
+PpdTex one has to produce DVI, then transform it to PostScript
+using @samp{dvi2ps(1)} command and finally convert it to PDF
+using Ghostscript's helper script @samp{ps2pdf(1)}.
+
+@item
+HTML Output
+
+@item
+Embedded Image support 
+
+@end itemize
+
+
+
 
 @node Setup
 @chapter Setup
@@ -49,7 +81,7 @@ Install these packages to use Texinfo in our example:
 
 @verbatim
 sudo apt-get install git make texinfo info pinfo texlive-binaries \
-   texlive-latex-base
+   texlive-latex-base texlive-plain-generic
 @end verbatim
 
 Note: The @code{info(1)} and @code{pinfo(1)} are viewers of 
@@ -73,14 +105,14 @@ And follow next section
 
 @section Generating documentation
 
-Use these commands to generate all available formats (PDF, HTML and Info):
+Use these commands to generate multiple output formats (PDF, HTML and Info):
 
 @verbatim
 cd ~/projects/html-and-pdf-generators/texinfo/
 make
 @end verbatim
 
-There are following formats generates:
+There are following formats generated:
 
 @table @samp
 @item TexinfoPoC.pdf
@@ -94,5 +126,22 @@ Info hypertext format, could be viewerd
 using @samp{pinfo(1)} or @samp{info(1)} commands.
 
 @end table
+
+Tip: to view @file{TexinfoPoC.info} file use this command:
+
+@verbatim
+pinfo -f TexinfoPoC.info
+@end verbatim
+
+@float Figure,fig:pinfo
+@image{pinfo-viewer}
+@caption{Pinfo viewer}
+@end float
+
+Please see @ref{fig:pinfo} how @samp{Pinfo viewer} looks alike.
+
+Use arrows keys to select "Link" (active Link is in Red color).
+Press @key{ENTER} to Drill Down selected Link.
+Finally press @kbd{q} to quit @samp{pinfo(1)}.
 
 @bye
