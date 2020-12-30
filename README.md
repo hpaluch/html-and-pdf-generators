@@ -57,7 +57,7 @@ Outputs:
 
 GNU Texinfo setup instructions are (written in Texinfo) here
 
-* https://hpaluch.github.io/html-and-pdf-generators/texinfo/setup.html
+* https://hpaluch.github.io/html-and-pdf-generators/TexinfoPoC/Setup.html
 
 
 
