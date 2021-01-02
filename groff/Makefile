@@ -9,7 +9,7 @@ all:  $(MANUAL).pdf $(MANUAL)/index.html
 
 $(MANUAL)/index.html : $(MANUAL).me
 	mkdir -p $(@D)
-	groff -T html -me $< > $@
+	groff -T html -P -nl -me $< > $@
 
 clean:
 	rm -f -- *.html *.pdf
