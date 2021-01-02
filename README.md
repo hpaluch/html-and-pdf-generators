@@ -74,7 +74,7 @@ GNU Roff setup instructions are (written in ME macros) here
 BUGS:
 
 * HTML output is seriously corrupted by Anchors that are
-  appended to links without any filtering/escaping !!!
+  appended to headers and cross refs without any filtering/escaping !!!
 
 Disclaimer:
 
