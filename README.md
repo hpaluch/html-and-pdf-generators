@@ -71,6 +71,11 @@ GNU Roff setup instructions are (written in ME macros) here
 
 * https://hpaluch.github.io/html-and-pdf-generators/GroffPoC/
 
+BUGS:
+
+* HTML output is seriously corrupted by Anchors that are
+  appended to links without any filtering/escaping !!!
+
 Disclaimer:
 
 - I don't know how to insert bitmap pictures to Groff input
