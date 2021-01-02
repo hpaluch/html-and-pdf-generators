@@ -59,6 +59,24 @@ GNU Texinfo setup instructions are (written in Texinfo) here
 
 * https://hpaluch.github.io/html-and-pdf-generators/TexinfoPoC/Setup.html
 
+## GNU Roff (groff)
+
+[GNU Roff](https://www.gnu.org/software/groff/manual/) example source is in directory [groff/](https://github.com/hpaluch/html-and-pdf-generators/tree/master/groff).
+
+Outputs:
+- [Example HTML Output](https://hpaluch.github.io/html-and-pdf-generators/GroffPoC/)
+- [Example PDF Output](https://hpaluch.github.io/html-and-pdf-generators/GroffPoC.pdf)
+
+GNU Roff setup instructions are (written in ME macros) here
+
+* https://hpaluch.github.io/html-and-pdf-generators/GroffPoC/
+
+Disclaimer:
+
+- I don't know how to insert bitmap pictures to Groff input
+- I don't know how to use Monospace font in groff (for listings)
+
+
 
 
 

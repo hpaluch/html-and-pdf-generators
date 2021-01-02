@@ -17,3 +17,7 @@ build/
 /texinfo/TexinfoPoC.pdf
 /texinfo/TexinfoPoC.info
 /texinfo/TexinfoPoC/
+# files generated under groff
+/groff/GroffPoC.pdf
+/groff/GroffPoC/
+

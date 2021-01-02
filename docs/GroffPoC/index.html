@@ -1,0 +1,115 @@
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Sat Jan  2 10:00:41 2021 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>1. Introduction&nbsp;&nbsp;</title>
+
+</head>
+<body>
+
+<h1 align="center">1. Introduction&nbsp;&nbsp;</h1>
+
+<a href="#2. Using groff&nbsp;&nbsp;">2. Using groff&nbsp;&nbsp;</a><br>
+<a href="#2.1. System preparation&nbsp;&nbsp;">2.1. System preparation&nbsp;&nbsp;</a><br>
+<a href="#2.2. Invoking groff&nbsp;&nbsp;">2.2. Invoking groff&nbsp;&nbsp;</a><br>
+
+<hr>
+
+
+<p style="margin-top: 1em">Groff (known as &ldquo;GNU
+Troff&rdquo; ) is traditional Unix system (from &rsquo;70)
+to generate documentaion. Most Unix Manual pages are still
+written using &ldquo;Groff&rdquo;.</p>
+
+<p style="margin-top: 1em">Originally Groff was used mainly
+for terminal output (including many backspace sequences, for
+example for highlight) and PostScript output - to create
+hard-copy of manuals.</p>
+
+<h2>2. Using groff&nbsp;&nbsp;
+<a name="2. Using groff&nbsp;&nbsp;"></a>
+</h2>
+
+
+<p style="margin-top: 1em">Tested on Debian10.</p>
+
+<h3>2.1. System preparation&nbsp;&nbsp;
+<a name="2.1. System preparation&nbsp;&nbsp;"></a>
+</h3>
+
+
+<p style="margin-top: 1em">At first we should install
+following packages:</p>
+
+<p style="margin-left:7%; margin-top: 1em">sudo apt-get
+install git make groff</p>
+
+<p style="margin-top: 1em">Now checkout this sample project
+using:</p>
+
+<p style="margin-left:7%; margin-top: 1em">mkdir -p
+~/projects <br>
+cd ~/projects <br>
+git clone
+https://github.com/hpaluch/html-and-pdf-generators.git <br>
+cd html-and-pdf-generators</p>
+
+<h3>2.2. Invoking groff&nbsp;&nbsp;
+<a name="2.2. Invoking groff&nbsp;&nbsp;"></a>
+</h3>
+
+
+<p style="margin-top: 1em">To generate PDF and HTML output
+do this:</p>
+
+<p style="margin-left:7%; margin-top: 1em">cd
+~/projects/html-and-pdf-generators/groff/ <br>
+make</p>
+
+<p style="margin-top: 1em">There should be no warning
+and/or error reported and these new files should be
+generated:</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="20%">
+
+
+<p>GroffPoC.pdf</p></td>
+<td width="80%">
+</td></tr>
+</table>
+
+<p style="margin-left:8%;">PDF outptut from GroffPoC.me
+input file</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="32%">
+
+
+<p>GroffPoC/index.html</p></td>
+<td width="68%">
+</td></tr>
+</table>
+
+<p style="margin-left:8%;">HTML output GroffPoC.me input
+file</p>
+
+<p style="margin-top: 1em">And that&rsquo;s all so far!</p>
+<hr>
+</body>
+</html>
