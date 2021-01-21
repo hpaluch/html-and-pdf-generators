@@ -15,6 +15,6 @@ set SPHINXBUILD=c:\Program Files\Python37\Scripts\sphinx-build.exe
 exit /b 0
 
 :error
-echo "Error %ERROLEVEL% while running Sphinx"
+echo "Error %ERRORLEVEL% while running Sphinx"
 exit /b 1
 
